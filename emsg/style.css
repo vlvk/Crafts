@@ -76,6 +76,7 @@ a {
 .mainWrapper > .navigator > ul > li:not(:first-child) > a {
 	padding: 15px 20px;
 	text-align: center;
+	position: relative;
 	display: block;
 }
 
@@ -84,7 +85,7 @@ a {
     border-radius: 7px;
 }
 
-.mainWrapper > .navigator > ul > li:not(:first-child) > a > span {
+.mainWrapper > .navigator > ul > li:not(:first-child) > a > span:last-child {
 	font-size: 20px;
 	color: #fff;
 	position: relative;
@@ -93,4 +94,21 @@ a {
 
 .mainWrapper > .navigator > ul > li:nth-last-child(2) {
 	flex-grow: 1;
+}
+
+.chatIcon {
+	position: absolute;
+	height: 7px;
+	width: 7px;
+	right: 10px;
+	top: 10px;
+	border-radius: 50%;
+}
+
+.chatIcon.warning {
+	background-color: #ffc107;
+}
+
+.chatIcon.danger {
+	background-color: #dc3545;
 }
