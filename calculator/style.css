@@ -1,0 +1,16 @@
+.bg-image {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to right,
+		rgb(19, 240, 233), rgb(30, 220, 100), rgb(19, 240, 233));
+}
+
+.bg-image .keyboard {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 1px;
+	grid-row-gap: 1px;
+}
