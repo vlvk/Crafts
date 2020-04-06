@@ -68,3 +68,7 @@ button {
 .keyboard .operator {
 	background-color: #eee;
 }
+
+.keyboard .operator.pressed {
+	background-color: #ddd;
+}
